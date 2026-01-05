@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../favicon_io/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>DSK-Portfolio</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgb(40, 40, 40);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #80ffdb;
+            border-radius: 15px;
+        }
+
+        @keyframes move-right-to-left {
+            0% {
+                transform: translateX(-100vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .move-right-to-left {
+            animation: move-right-to-left 1s ease-in-out forwards;
+        }
+
+        @keyframes move-left-to-right {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .move-left-to-right {
+            animation: move-left-to-right 1s ease-in-out forwards;
+        }
+
+        @keyframes move-top-to-bottom {
+            0% {
+                transform: translateY(-100vw);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .move-top-to-bottom {
+            animation: move-top-to-bottom 2s ease-in-out forwards;
+        }
+
+        body {
+            background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
+            background: linear-gradient(to left, #141414, #000000);
+        }
+
+        .autoShow {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: opacity 0.6s ease-out, transform 1s ease-out;
+        }
+
+        .autoShow.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+
+</head>
+
+
+<body class="font-['Hanken_Grotesk'] overflow-x-hidden ">
+    <!-- Navbar -->
+    <div class="Home-container min-h-screen">
+        <div class="navigation border-b border-white/15">
+            <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
+                <a class="logo inline-block text-[20px] font-extrabold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
+                    href="index.html">&lt;DSK/&gt;</a>
+                <div
+                    class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
+                    <ul
+                        class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
+                        <a href="#">
+                            <li
+                                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
+                            </li>
+                        </a>
+                        <a href="projects.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
+                            </li>
+                        </a>
+                        <a class="md:hidden" href="contact.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
+                                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
+                                Me
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div
+                    class="contact -top-[100px] hover:text-[#00bbf9] text-[#fefae0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
+                    <a href="contact.html">
+                        <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
+                </div>
+                <div class="humburger md:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl text-[#fefae0] cursor-pointer mt-3 md:hidden"></ion-icon>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Home -->
+
+        <div class="md:flex md:justify-center md:w-full border-b border-white/15">
+            <div class="overflow-hidden">
+                <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 move-left-to-right">
+                    Eat Code Sleep
+                </p>
+                <p
+                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28 move-left-to-right">
+                    & Repeat
+                </p>
+                <p
+                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36 move-right-to-left">
+                    End-To-End
+                </p>
+                <p
+                    class="text-[#3939393c] mb-5 text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-0 mt-10 md:mt-28 move-right-to-left">
+                    Developer
+                </p>
+            </div>
+            <div
+                class="    text-white min-h-[91vh] flex flex-col items-center justify-center px-6 py-12 space-y-4 font-sans text-center move-top-to-bottom">
+
+
+                <div class="flex space-x-3 justify-center items-center md:mb-4 group">
+                    <img src="/images/king.png"
+                        class="w-20 h-20 p-2 object-cover hover:border-2 border-white rounded-full cursor-pointer hover:w-96 hover:h-96"
+                        alt="">
+                    <i
+                        class="fa-solid fa-hand-pointer text-[#fbfbfb] text-xl absolute right-[64%] top-30 md:right-[57%] md:top-40 animate-bounce h-10 w-10 group-hover:hidden"></i>
+                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[20px]">Hello, I'm Shiva</p>
+                </div>
+
+                <div class="text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
+                    CRAFTING
+                </div>
+
+
+                <h1 class="text-[#ffc524]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
+
+
+                <h1 class="text-[#ffffe0] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
+
+
+                <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
+
+                    <span
+                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2fc0e8] via-[#b542e6]  to-orange-500">
+                        FULL-STACK WEB DEVELOPER
+                    </span>
+                </div>
+
+                <p class="text-white text-base md:text-2xl max-w-3xl mt-6">
+                    I develop digital interfaces that integrate
+                    <span class="text-purple-400 font-semibold">streamlined</span> performance
+                    artistic appeal,
+                    <span class="text-yellow-400 font-semibold">robust</span>, and
+                    <span class="text-cyan-400 font-semibold">functionality</span>.
+                </p>
+
+                <div class="text-[20px] text-white text-right">
+                    📍 Hyderabad, India
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="text-[#fefae0]">
+        <div class="w-[98%] mx-auto mt-4 mb-5 flex justify-between">
+            <p class="text-[10px] md:text-[16px] border border-[#ffffff21] rounded-full p-3">// Plan · Code · Wow</p>
+
+            <p class="border border-[#ffffff21] rounded-full p-3"><i class="fa-solid fa-envelope mr-2 text-xl"></i><a
+                    href="#"
+                    class="text-blue-300 hover:border-b hover:border-blue-400 text-[15px] md:text-[20px]">example@example.com</a>
+            </p>
+        </div>
+        <div class="w-[96%] mx-auto flex flex-col md:flex-row justify-between">
+            <p class="w-[90%] text-[22px] md:w-[60%] md:text-[30px]">Building scalable, user-focused web applications
+                with
+                modern technologies across
+                the stack. I combine clean frontend design with efficient backend architecture to deliver seamless,
+                high-performance digital experiences.
+            </p>
+            <p class="w-[90%] mt-7 md:mt-0 md:w-[22%] text-[15px] flex justify-center">I Plan smart solutions, Code with
+                precision, and Wow users with
+                seamless digital experiences.
+            </p>
+        </div>
+
+        <div>
+            <p
+                class="text-[24px] md:text-[40px] p-2 text-[#fffffff0] inline-block bg-[#008f29]  mt-10 m-7 font-['Lugrasimo']">
+                [Crafting code that seamlessly
+                <br /> integrates design and functionality.]
+            </p>
+            <div class="flex-grow border border-[#ffffff21] w-[96%] mx-auto mt-5"></div>
+            <div class="w-[96%] mx-auto mt-5">
+                <p class="w-[90%] md:w-[50%] text-[22px] md:text-[30px]">I craft visually engaging front-end designs and
+                    integrate them with powerful back-end functionality to build
+                    modern, high-performing websites.
+                </p>
+            </div>
+            <div class="flex justify-end w-[96%] mx-auto">
+                <button class="text-[#fefae0] text-[30px] border border-blue-500 py-5 px-8 rounded-full mt-5
+           transition-all duration-500 ease-in-out hover:bg-blue-500 hover:text-white group">
+                    <a href="about.html" class="flex items-center gap-2">
+                        About Me
+                        <span class="transition-transform duration-500 group-hover:translate-x-2">&rarr;</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div
+        class="contact-box border border-white/20 mt-10 h-[530px] w-[98%] mx-auto rounded-2xl text-[#fefae0] relative overflow-hidden">
+        <div>
+            <div class="contact-socials flex m-2 md:m-7 justify-between ">
+                <div>
+                    <p class=" font-semibold text-[16px] md:text-[35px]">
+                        <span class="text-[#ff6f31]">eat🍴</span>, <span class="text-[#fe32fe]">code🧑‍💻</span>, <span
+                            class="text-[#34b8ff]">sleep😴</span>
+                    </p>
+                    <p class="text-[20px] text-[#f8ff2f] md:text-[25px]">& repeat🔁</p>
+                </div>
+                <ul class="">
+                    <p class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold">Explore</p>
+                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="index.html">Home</a></li>
+                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="about.html">About Me</a></li>
+                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="projects.html">My Projects</a></li>
+                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <ul>
+                    <p class="mb-3 text-[#1789fc] text-[20px] md:text-[30px] font-semibold flex flex-col">Follow Me</p>
+                    <li class="hover:text-[#00bbf9] autoShow"><a href="#" class="text-[15px] md:text-[20px]"><img
+                                src="/images/icons8-linkedin-25.png" alt="#" class="inline-block" /> LinkedIn</a></li>
+                    <li class="mt-2 hover:text-[#00bbf9] autoShow"><a href="#" class="text-[15px] md:text-[20px]"><img
+                                src="/images/icons8-dribble-25.png" alt="#" class="inline-block" /> Dribble</a></li>
+                    <li class="mt-2 hover:text-[#00bbf9] autoShow"><a href="#" class="text-[15px] md:text-[20px]"><img
+                                src="/images/icons8-behance-25.png" alt="#" class="inline-block" /> Behance</a></li>
+                    <li class="mt-2 hover:text-[#00bbf9] autoShow"><a href="#" class="text-[15px] md:text-[20px]"><img
+                                src="/images/icons8-github-20.png" alt="#" class="inline-block ml-1" /> Git Hub</a></li>
+                </ul>
+            </div>
+            <div>
+                <p
+                    class="dsk text-[100px] right-4 bottom-10 md:text-[400px] absolute md:top-32 z-[-1] md:left-9 md:right-28 font-bold font-['Ephesis']">
+                    &lt;DS<span class="text-[#ff7b00]">K</span><span class="text-[#fff201]">/</span>&gt;</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="w-[90%] mx-auto m-4 text-[#fefae0] flex flex-col">
+        <div class="flex justify-center">
+            <p class="flex text-[16px] md:text-[20px] font-semibold">Made With 💞 by Shivakumar Dornala</p>
+        </div>
+        <div class="flex justify-between mt-3 text-[12px] md:text-[20px]">
+            <p>DSK ©2025 - All rights reserved</p>
+            <p>Hyderabad, India</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

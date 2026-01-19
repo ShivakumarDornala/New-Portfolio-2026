@@ -35,6 +35,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="icon" href="../favicon_io/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -96,8 +99,14 @@
         }
 
         body {
-            background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
-            background: linear-gradient(to left, #141414, #000000);
+           background:
+  radial-gradient(
+    ellipse 80% 45% at 50% -20%,
+    hsla(196, 94%, 45%, 0.83) 0%,
+    transparent 70%
+  ),
+  black;
+
         }
 
         .autoShow {
@@ -118,10 +127,10 @@
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden ">
     <!-- Navbar -->
     <div class="Home-container min-h-screen">
-        <div class="navigation border-b border-white/15">
+        <div class="navigation">
             <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
-                <a class="logo inline-block text-[20px] font-extrabold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
-                    href="index.html">&lt;DSK/&gt;</a>
+                <a class="logo inline-block text-[30px] font-[700] my-4 text-[#fefae0] font-['Tangerine']"
+                    href="index.html">Dsk</a>
                 <div
                     class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
                     <ul
@@ -169,19 +178,19 @@
 
         <div class="md:flex md:justify-center md:w-full border-b border-white/15">
             <div class="overflow-hidden">
-                <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 move-left-to-right">
+                <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 ">
                     Eat Code Sleep
                 </p>
                 <p
-                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28 move-left-to-right">
+                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28">
                     & Repeat
                 </p>
                 <p
-                    class="text-[#3333333c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36 move-right-to-left">
+                    class="text-[#3333333c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36">
                     End-To-End
                 </p>
                 <p
-                    class="text-[#3939393c] mb-5 text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-0 mt-10 md:mt-28 move-right-to-left">
+                    class="text-[#3939393c] mb-5 text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-0 mt-10 md:mt-28">
                     Developer
                 </p>
             </div>

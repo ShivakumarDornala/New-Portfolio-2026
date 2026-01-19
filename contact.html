@@ -116,10 +116,16 @@
         animation: move-top-to-bottom 2s ease-in-out forwards;
       }
 
-      body {
-        background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
-        background: linear-gradient(to left, #141414, #000000);
-      }
+       body {
+           background:
+  radial-gradient(
+    ellipse 80% 45% at 50% -20%,
+    hsla(196, 94%, 45%, 0.83) 0%,
+    transparent 70%
+  ),
+  black;
+
+        }
 
       .autoShow {
         opacity: 0;

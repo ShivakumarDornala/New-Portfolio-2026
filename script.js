@@ -4,5 +4,6 @@ const dropdown = document.querySelector(".show-menu");
 
 hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
-  dropdown.classList.toggle("right-9");
+  dropdown.classList.toggle("md:right-9");
+   dropdown.classList.toggle("right-3");
 });

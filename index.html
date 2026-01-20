@@ -36,8 +36,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon_io/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -99,13 +99,11 @@
         }
 
         body {
-           background:
-  radial-gradient(
-    ellipse 80% 60% at 50% -25%,
-    hsla(196, 94%, 45%, 0.83) 0%,
-    transparent 70%
-  ),
-  black;
+            background:
+                radial-gradient(ellipse 80% 60% at 50% -25%,
+                    hsla(196, 94%, 45%, 0.83) 0%,
+                    transparent 70%),
+                black;
 
         }
 
@@ -119,6 +117,35 @@
             opacity: 1;
             transform: translateX(0);
         }
+
+        .ham-menu span {
+            height: 3px;
+            width: 30px;
+            background-color: antiquewhite;
+            display: block;
+            border-radius: 25px;
+            margin: 3px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .ham-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ham-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .ham-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .ham-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
     </style>
 
 </head>
@@ -127,53 +154,17 @@
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden ">
     <!-- Navbar -->
     <div class="Home-container min-h-screen">
-        <div class="navigation">
-            <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
+        <div class="navigation flex w-[95%] mx-auto justify-between">
+            <nav class="flex m-1.5 text-base font-medium md:flex">
                 <a class="logo inline-block text-[30px] font-[700] my-4 text-[#fefae0] font-['Tangerine']"
                     href="index.html">Dsk</a>
-                <!-- <div
-                    class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
-                    <ul
-                        class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
-                        <a href="#">
-                            <li
-                                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
-                            </li>
-                        </a>
-                        <a href="about.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
-                            </li>
-                        </a>
-                        <a href="projects.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
-                            </li>
-                        </a>
-                        <a class="md:hidden" href="contact.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
-                                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
-                                Me
-                            </li>
-                        </a>
-                    </ul>
-                </div> -->
-                <!-- <div
-                    class="contact -top-[100px] hover:text-[#00bbf9] text-[#fcf9e0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
-                    <a href="contact.html">
-                        <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
-                </div>
-                <div class="humburger md:hidden">
-                    <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class="text-3xl text-[#fffbe4] cursor-pointer mt-3 md:hidden"></ion-icon>
-                </div> -->
             </nav>
+            <div class="ham-menu flex">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-
         <!-- Home -->
 
         <div class="md:flex md:justify-center md:w-full border-b border-white/15">
@@ -181,12 +172,10 @@
                 <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 ">
                     Eat Code Sleep
                 </p>
-                <p
-                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28">
+                <p class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28">
                     & Repeat
                 </p>
-                <p
-                    class="text-[#3333333c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36">
+                <p class="text-[#3333333c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36">
                     End-To-End
                 </p>
                 <p
@@ -212,10 +201,10 @@
                 </div>
 
 
-                <h1 class="text-[#ffc524]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
+                <h1 class="text-[#ffe600]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
 
 
-                <h1 class="text-[#ffffe0] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
+                <h1 class="text-[#04fb00] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
 
 
                 <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
@@ -338,8 +327,55 @@
             <p>Hyderabad, India</p>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- <div
+                    class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
+                    <ul
+                        class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
+                        <a href="#">
+                            <li
+                                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
+                            </li>
+                        </a>
+                        <a href="projects.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
+                            </li>
+                        </a>
+                        <a class="md:hidden" href="contact.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
+                                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
+                                Me
+                            </li>
+                        </a>
+                    </ul>
+                </div> -->
+<!-- <div
+                    class="contact -top-[100px] hover:text-[#00bbf9] text-[#fcf9e0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
+                    <a href="contact.html">
+                        <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
+                </div>
+                <div class="humburger md:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl text-[#fffbe4] cursor-pointer mt-3 md:hidden"></ion-icon>
+                </div> -->

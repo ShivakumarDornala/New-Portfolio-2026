@@ -126,17 +126,53 @@
           black;
       }
 
-      .autoShow {
-        opacity: 0;
-        transform: translateX(-100px);
-        transition:
-          opacity 0.6s ease-out,
-          transform 1s ease-out;
+      .ham-menu span {
+        height: 3px;
+        width: 30px;
+        background-color: antiquewhite;
+        display: block;
+        border-radius: 25px;
+        margin: 3px;
+        transition: all 0.3s ease;
+        cursor: pointer;
       }
 
-      .autoShow.show {
-        opacity: 1;
-        transform: translateX(0);
+      .ham-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .ham-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .ham-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+      }
+
+      .show-menu li:hover i {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .show-menu li:hover .menu-text {
+        display: inline-block;
+        animation: fadeIn 0.3s ease;
+        color: #00bbf9;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       .Skills {
@@ -193,76 +229,65 @@
   </head>
 
   <body class="font-['Hanken_Grotesk'] overflow-x-hidden">
-    <div class="navigation border-b border-white/15">
-      <nav
-        class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex"
-      >
+    <div class="navigation flex w-[95%] mx-auto justify-between">
+      <nav class="flex m-1.5 text-base font-medium md:flex">
         <a
-          class="logo inline-block text-[20px] font-bold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
+          class="logo inline-block text-[30px] font-[700] my-4 text-[#fefae0] font-['Tangerine']"
           href="index.html"
-          >&lt;DSK/&gt;</a
+          >Dsk</a
         >
-        <div
-          class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto"
-        >
-          <ul
-            class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]"
-          >
-            <a href="index.html">
-              <li
-                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3"
-              >
-                <i
-                  class="fa-solid fa-house text-base mr-2 order-2 md:order-none"
-                ></i
-                >Home
-              </li>
-            </a>
-            <a href="#">
-              <li
-                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3"
-              >
-                <i
-                  class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"
-                ></i
-                >About Me
-              </li>
-            </a>
-            <a href="projects.html">
-              <li
-                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3"
-              >
-                <i
-                  class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"
-                ></i
-                >My Projects
-              </li>
-            </a>
-            <a class="md:hidden" href="contact.html">
-              <li
-                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2"
-              >
-                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
-                Me
-              </li>
-            </a>
-          </ul>
-        </div>
-        <div
-          class="contact -top-[100px] hover:text-[#00bbf9] text-[#fefae0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative"
-        >
-          <a href="contact.html">
-            <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a
-          >
-        </div>
-        <div class="humburger md:hidden">
-          <ion-icon
-            onclick="onToggleMenu(this)"
-            name="menu"
-            class="text-3xl text-[#fefae0] cursor-pointer mt-3 md:hidden"
-          ></ion-icon>
-        </div>
       </nav>
+      <div class="ham-menu flex">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div
+        class="show-menu z-10 flex top-[40%] right-[-50px] absolute transition-all duration-500 ease-in-out"
+      >
+        <ul class="space-y-4 md:space-y-6 cursor-pointer">
+          <li class="relative flex items-center gap-2">
+            <i
+              class="fa-solid text-2xl text-[#fff] fa-house order-2 md:order-none"
+            ></i
+            ><a
+              href="index.html"
+              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
+              >Home</a
+            >
+          </li>
+          <li class="relative flex items-center gap-2">
+            <i
+              class="fa-solid text-2xl text-[#fff] fa-address-card order-2 md:order-none"
+            ></i
+            ><a
+              href="about.html"
+              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
+              >About</a
+            >
+          </li>
+          <li class="relative flex items-center gap-2">
+            <i
+              class="fa-solid text-xl text-[#fff] fa-suitcase order-2 md:order-none"
+            ></i
+            ><a
+              href="projects.html"
+              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
+              >Projects</a
+            >
+          </li>
+          <li class="relative flex items-center gap-2">
+            <i
+              class="fa-solid text-2xl text-[#fff] fa-user order-2 md:orFder-none"
+            ></i
+            ><a
+              href="contact.html"
+              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- ABOUT ME -->

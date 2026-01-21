@@ -1,10 +1,6 @@
 // HAMBURGER MENU
-const hamMenu = document.querySelector(".ham-menu");
-const dropdown = document.querySelector(".show-menu");
-
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  dropdown.classList.toggle("md:right-9");
-   dropdown.classList.toggle("right-3");
-});
-
+const dropdown = document.querySelector(".dropdown-menu");
+function onToggleMenu(e) {
+  e.name = e.name == "menu" ? "close" : "menu";
+  dropdown.classList.toggle("top-16");
+}

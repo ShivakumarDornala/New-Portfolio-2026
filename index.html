@@ -35,9 +35,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon_io/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -48,7 +45,7 @@
         }
 
         ::-webkit-scrollbar-track {
-            background-color: rgb(19, 19, 19);
+            background-color: rgb(40, 40, 40);
         }
 
         ::-webkit-scrollbar-thumb {
@@ -99,63 +96,8 @@
         }
 
         body {
-            background:
-                radial-gradient(ellipse 80% 60% at 50% -25%,
-                    hsla(196, 94%, 45%, 0.83) 0%,
-                    transparent 70%),
-                black;
-
-        }
-
-        .ham-menu span {
-            height: 3px;
-            width: 30px;
-            background-color: antiquewhite;
-            display: block;
-            border-radius: 25px;
-            margin: 3px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .ham-menu {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .ham-menu.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-
-        .ham-menu.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .ham-menu.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(8px, -8px);
-        }
-
-    
-
-        .show-menu li:hover i {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .show-menu li:hover .menu-text {
-            display: inline-block;
-            animation: fadeIn 0.3s ease;
-            color: #00bbf9;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
+            background: linear-gradient(to left, #141414, #000000);
         }
     </style>
 
@@ -165,40 +107,70 @@
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden ">
     <!-- Navbar -->
     <div class="Home-container min-h-screen">
-        <div class="navigation flex w-[95%] mx-auto justify-between">
-            <nav class="flex m-1.5 text-base font-medium md:flex">
-                <a class="logo inline-block text-[30px] font-[700] my-4 text-[#fefae0] font-['Tangerine']"
-                    href="index.html">Dsk</a>
+        <div class="navigation border-b border-white/15">
+            <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
+                <a class="logo inline-block text-[20px] font-extrabold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
+                    href="index.html">&lt;DSK/&gt;</a>
+                <div
+                    class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
+                    <ul
+                        class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
+                        <a href="#">
+                            <li
+                                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
+                            </li>
+                        </a>
+                        <a href="projects.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+                                <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
+                            </li>
+                        </a>
+                        <a class="md:hidden" href="contact.html">
+                            <li
+                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
+                                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
+                                Me
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div
+                    class="contact -top-[100px] hover:text-[#00bbf9] text-[#fefae0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
+                    <a href="contact.html">
+                        <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
+                </div>
+                <div class="humburger md:hidden">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl text-[#fefae0] cursor-pointer mt-3 md:hidden"></ion-icon>
+                </div>
             </nav>
-            <div class="ham-menu flex">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="show-menu z-10 flex top-[40%] right-[-50px] absolute transition-all duration-500 ease-in-out">
-                <ul class="space-y-4 md:space-y-6 cursor-pointer">
-                    <li class="relative flex items-center gap-2"> <i class="fa-solid text-2xl text-[#fff] fa-house order-2 md:order-none"></i><a href="index.html" class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold">Home</a></li>
-                    <li class="relative flex items-center gap-2"> <i class="fa-solid text-2xl text-[#fff] fa-address-card order-2 md:order-none"></i><a href="about.html" class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold">About</a></li>
-                    <li class="relative flex items-center gap-2"> <i class="fa-solid text-xl text-[#fff] fa-suitcase order-2 md:order-none"></i><a href="projects.html" class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold">Projects</a></li>
-                    <li class="relative flex items-center gap-2"> <i class="fa-solid text-2xl text-[#fff] fa-user order-2 md:order-none"></i><a href="contact.html" class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold">Contact</a></li>
-                </ul>
-            </div>
         </div>
+
         <!-- Home -->
 
         <div class="md:flex md:justify-center md:w-full border-b border-white/15">
             <div class="overflow-hidden">
-                <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 ">
+                <p class="text-[#3939393c] text-[50px] md:text-[150px] absolute z-[-1] left-0 move-left-to-right">
                     Eat Code Sleep
                 </p>
-                <p class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28">
+                <p
+                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] left-0 mt-10 md:mt-28 move-left-to-right">
                     & Repeat
                 </p>
-                <p class="text-[#3333333c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36">
+                <p
+                    class="text-[#3535353c] text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-16 md:bottom-36 move-right-to-left">
                     End-To-End
                 </p>
                 <p
-                    class="text-[#3939393c] mb-5 text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-0 mt-10 md:mt-28">
+                    class="text-[#3939393c] mb-5 text-[50px] md:text-[150px] absolute z-[-1] right-0 bottom-0 mt-10 md:mt-28 move-right-to-left">
                     Developer
                 </p>
             </div>
@@ -207,31 +179,30 @@
 
 
                 <div class="flex space-x-3 justify-center items-center md:mb-4 group">
-                    <img src="../images/king.png"
-                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#04adfc] rounded-full cursor-pointer hover:w-96 hover:h-96"
+                    <img src="/images/king.png"
+                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#00bbf9] rounded-full cursor-pointer hover:w-96 hover:h-96"
                         alt="">
                     <i
                         class="fa-solid fa-hand-pointer text-[#fbfbfb] text-xl absolute right-[64%] top-30 md:right-[57%] md:top-40 animate-bounce h-10 w-10 group-hover:hidden"></i>
-                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[20px]">Hello, I'm Shiva
-                    </p>
+                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[20px]">Hello, I'm Shiva</p>
                 </div>
 
-                <div class="text-[#f32b8f] text-2xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
+                <div class="text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
                     CRAFTING
                 </div>
 
 
-                <h1 class="text-[#ffe600]  text-2xl md:text-6xl font-bold">DIGITAL</h1>
+                <h1 class="text-[#ffc524]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
 
 
-                <h1 class="text-[#04fb00] text-2xl md:text-6xl font-bold">EXPERIENCES</h1>
+                <h1 class="text-[#04ffc9] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
 
 
-                <div class="flex flex-wrap justify-center items-center text-2xl md:text-6xl font-bold space-x-4">
+                <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
 
                     <span
-                        class="text-3xl md:text-5xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2fc0e8] via-[#b542e6]  to-orange-500">
-                        FULL-STACK SOFTWARE ENGINEER
+                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa]  to-[#0244fa]">
+                        FULL-STACK WEB DEVELOPER
                     </span>
                 </div>
 
@@ -347,55 +318,8 @@
             <p>Hyderabad, India</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-<!-- <div
-                    class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
-                    <ul
-                        class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
-                        <a href="#">
-                            <li
-                                class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
-                            </li>
-                        </a>
-                        <a href="about.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
-                            </li>
-                        </a>
-                        <a href="projects.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-                                <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
-                            </li>
-                        </a>
-                        <a class="md:hidden" href="contact.html">
-                            <li
-                                class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
-                                <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
-                                Me
-                            </li>
-                        </a>
-                    </ul>
-                </div> -->
-<!-- <div
-                    class="contact -top-[100px] hover:text-[#00bbf9] text-[#fcf9e0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
-                    <a href="contact.html">
-                        <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
-                </div>
-                <div class="humburger md:hidden">
-                    <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class="text-3xl text-[#fffbe4] cursor-pointer mt-3 md:hidden"></ion-icon>
-                </div> -->

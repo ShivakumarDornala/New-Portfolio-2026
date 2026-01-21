@@ -1,674 +1,495 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vibur&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="../favicon_io/favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>DSK-Portfolio</title>
-    <style>
-      ::-webkit-scrollbar {
-        width: 8px;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Vibur&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="../favicon_io/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <title>DSK-Portfolio</title>
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: rgb(40, 40, 40);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #80ffdb;
+      border-radius: 15px;
+    }
+
+    @keyframes move-right-to-left {
+      0% {
+        transform: translateX(-100vw);
       }
 
-      ::-webkit-scrollbar-track {
-        background-color: rgb(40, 40, 40);
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .move-right-to-left {
+      animation: move-right-to-left 1s ease-in-out forwards;
+    }
+
+    @keyframes move-left-to-right {
+      0% {
+        transform: translateX(100vw);
       }
 
-      ::-webkit-scrollbar-thumb {
-        background: #80ffdb;
-        border-radius: 15px;
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .move-left-to-right {
+      animation: move-left-to-right 1s ease-in-out forwards;
+    }
+
+    @keyframes move-top-to-bottom {
+      0% {
+        transform: translateY(-100vw);
       }
 
-      @keyframes move-right-to-left {
-        0% {
-          transform: translateX(-100vw);
-        }
+      100% {
+        transform: translateY(0);
+      }
+    }
 
-        100% {
-          transform: translateX(0);
-        }
+    .move-top-to-bottom {
+      animation: move-top-to-bottom 2s ease-in-out forwards;
+    }
+
+    body {
+      background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
+      background: linear-gradient(to left, #141414, #000000);
+    }
+
+    .Skills {
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .Skills-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 20s linear infinite;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+    .Skills:hover .Skills-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
       }
 
-      .move-right-to-left {
-        animation: move-right-to-left 1s ease-in-out forwards;
+      to {
+        transform: translateX(-50%);
       }
+    }
+  </style>
+</head>
 
-      @keyframes move-left-to-right {
-        0% {
-          transform: translateX(100vw);
-        }
-
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      .move-left-to-right {
-        animation: move-left-to-right 1s ease-in-out forwards;
-      }
-
-      @keyframes move-top-to-bottom {
-        0% {
-          transform: translateY(-100vw);
-        }
-
-        100% {
-          transform: translateY(0);
-        }
-      }
-
-      .move-top-to-bottom {
-        animation: move-top-to-bottom 2s ease-in-out forwards;
-      }
-
-      body {
-        background:
-          radial-gradient(
-            ellipse 80% 45% at 50% -20%,
-            hsla(196, 94%, 45%, 0.83) 0%,
-            transparent 70%
-          ),
-          black;
-      }
-
-      .ham-menu span {
-        height: 3px;
-        width: 30px;
-        background-color: antiquewhite;
-        display: block;
-        border-radius: 25px;
-        margin: 3px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-
-      .ham-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .ham-menu.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-
-      .ham-menu.active span:nth-child(2) {
-        opacity: 0;
-      }
-
-      .ham-menu.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(8px, -8px);
-      }
-
-      .show-menu li:hover i {
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .show-menu li:hover .menu-text {
-        display: inline-block;
-        animation: fadeIn 0.3s ease;
-        color: #00bbf9;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      .Skills {
-        width: 100%;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 10px;
-        margin-top: 50px;
-      }
-
-      .Skills-track {
-        display: flex;
-        width: max-content;
-        animation: scroll 20s linear infinite;
-      }
-
-      .card {
-        flex: 0 0 auto;
-        width: 150px;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-      }
-      .card img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-      }
-      .Skills:hover .Skills-track {
-        animation-play-state: paused;
-      }
-
-      @keyframes scroll {
-        from {
-          transform: translateX(0);
-        }
-
-        to {
-          transform: translateX(-50%);
-        }
-      }
-
-      @media (max-width: 768px) {
-        .Skills {
-          overflow-x: auto;
-        }
-        .Skills-track {
-          animation-play-state: paused;
-        }
-      }
-    </style>
-  </head>
-
-  <body class="font-['Hanken_Grotesk'] overflow-x-hidden">
-    <div class="navigation flex w-[95%] mx-auto justify-between">
-      <nav class="flex m-1.5 text-base font-medium md:flex">
-        <a
-          class="logo inline-block text-[30px] font-[700] my-4 text-[#fefae0] font-['Tangerine']"
-          href="index.html"
-          >Dsk</a
-        >
-      </nav>
-      <div class="ham-menu flex">
-        <span></span>
-        <span></span>
-        <span></span>
+<body class="font-['Hanken_Grotesk'] overflow-x-hidden">
+  <div class="navigation border-b border-white/15">
+    <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
+      <a class="logo inline-block text-[20px] font-bold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
+        href="index.html">&lt;DSK/&gt;</a>
+      <div
+        class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
+        <ul
+          class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
+          <a href="index.html">
+            <li
+              class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+              <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
+            </li>
+          </a>
+          <a href="#">
+            <li
+              class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+              <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
+            </li>
+          </a>
+          <a href="projects.html">
+            <li
+              class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
+              <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
+            </li>
+          </a>
+          <a class="md:hidden" href="contact.html">
+            <li class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
+              <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
+              Me
+            </li>
+          </a>
+        </ul>
       </div>
       <div
-        class="show-menu z-10 flex top-[40%] right-[-50px] absolute transition-all duration-500 ease-in-out"
-      >
-        <ul class="space-y-4 md:space-y-6 cursor-pointer">
-          <li class="relative flex items-center gap-2">
-            <i
-              class="fa-solid text-2xl text-[#fff] fa-house order-2 md:order-none"
-            ></i
-            ><a
-              href="index.html"
-              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
-              >Home</a
+        class="contact -top-[100px] hover:text-[#00bbf9] text-[#fefae0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
+        <a href="contact.html">
+          <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
+      </div>
+      <div class="humburger md:hidden">
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-3xl text-[#fefae0] cursor-pointer mt-3 md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ABOUT ME -->
+
+  <div class="about-container">
+    <div class="flex mt-5 md:mt-10 text-[#fefae0] w-[95%] text-[60px] md:text-[120px] mx-auto move-left-to-right">
+      About Me
+    </div>
+    <div class="flex-grow border border-[#ffffff21] w-[96%] mx-auto"></div>
+
+    <div class="text-[#fefae0] justify-center w-[95%] mx-auto">
+      <p class="text-[25px] md:text-[60px] font-semibold border-b mt-5 border-white pb-4">
+        Hi there! 👋 I'm Shivakumar 😎, <br />I specialize in crafting
+        seamless,
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[#43ffcd] via-[#4378f4] to-[#00f9fe]">end-to-end</span>
+        solutions that deliver real impact.
+      </p>
+    </div>
+    <div
+      class="more-info flex flex-col md:mt-16 text-[#fefae0] md:flex w-[90%] mx-auto md:justify-between md:m-6 md:flex-row md:mx-auto">
+      <p class="text-[15px] md:text-[25px] md:w-[50%] mt-2">
+        I specialize in building
+        <b class="text-[#31ffd6]">scalable</b>,
+        <b class="text-[#ff2692]">high-performance</b>
+        applications with a strong focus on
+        <b class="text-[#ffed2a]">user experience</b>
+        and efficient development practices. Over the past
+        <b class="text-[#ff2a2a]">1.5 years</b>, I dedicated
+        <b class="text-[#b429ff]"> 5 - 6 </b>
+        hours daily to learning new technologies and developing
+
+        <b class="text-[#296dff]">innovative projects. </b>
+      </p>
+      <div class="side-info mt-4 md:mt-0 md:w-[30%]">
+        <p>
+          || My ability to <b>code and communicate</b> effectively helps in
+          creating more <b>efficient</b>, user-friendly websites. ||
+        </p>
+        <div class="languages mt-6">
+          <h3 class="text-[20px] font-semibold">Languages known :</h3>
+          <br />
+          <p>English</p>
+          <p>తెలుగు</p>
+          <p>हिन्दी</p>
+          <!-- <audio id="audio">
+              <source src="Audio.mp3" type="audio/mp3" />
+            </audio>
+            <div
+              class="mt-3 flex space-x-3 bg-[#dc2cfb] rounded-lg justify-center"
             >
+              <p class="my-auto font-semibold text-[22px]">
+                Play for voice over
+              </p>
+              <button
+                id="playpauseBTN"
+                onclick="playpause()"
+                class="mt-3 bg-[#fbf724] text-[20px] animate-bounce text-[#000000d8] py-2 px-4 font-semibold rounded-lg"
+              >
+                &#9658;
+              </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-[95%] mx-auto">
+    <div>
+      <p class="text-[#d900fa] flex justify-center items-center text-3xl font-bold my-10">What I Know <span
+          class="animate-ping"> .</span>
+      </p>
+    </div>
+
+
+    <div class="flex gap-10">
+
+
+      <div class="w-1/3">
+        <p class="text-[#d7d7d779] mb-3 text-4xl">01.</p>
+        <hr class="border-b border-[#ffffff21]">
+        <p class="text-[#fefae0] text-3xl my-4">
+          Front-End
+        </p>
+        <p class="text-[#fefae0]">
+          Driven by a passion for modern design and performance, I transform complex ideas into responsive, accessible,
+          and user-centric digital experiences that stay ahead of evolving industry trends.
+        </p>
+      </div>
+
+
+      <div class="w-1/3">
+        <p class="text-[#d7d7d779] mb-3 text-4xl">02.</p>
+        <hr class="border-b border-[#ffffff21]">
+        <p class="text-[#fefae0] text-3xl my-4">
+          Back-End
+        </p>
+        <p class="text-[#fefae0]">
+          Building robust and scalable server-side architectures, I focus on optimizing performance and data integrity
+          to
+          ensure seamless, secure, and high-speed background operations that power modern digital solutions.
+        </p>
+      </div>
+
+      <div class="w-1/3">
+        <p class="text-[#d7d7d779] mb-3 text-4xl">03.</p>
+        <hr class="border-b border-[#ffffff21]">
+        <p class="text-[#fefae0] text-3xl my-4">
+          Full-Stack
+        </p>
+        <p class="text-[#fefae0]">
+          Bridging the gap between sleek user interfaces and robust server-side logic, I build scalable, end-to-end
+          digital solutions that prioritize high performance and security while seamlessly integrating complex data
+          systems into intuitive, impact-driven experiences.
+        </p>
+      </div>
+    </div>
+
+    <!-- Infinite Scroll -->
+
+    <div>
+      <p class="text-[#e9fa00] flex justify-center items-center text-4xl font-bold my-10">Technologies I Work With <span
+          class="animate-ping"> .</span>
+      </p>
+      <p class="text-[#fefae0] text-3xl text-center mb-10">
+        Skilled in developing <b class="text-[#31ffd6]">scalable</b> front-end solutions supported by <b class="text-[#ff6f31]">reliable</b> and maintainable back-end <b class="text-[#34b8ff]">architectures</b>, with a strong emphasis on <b class="text-[#ff2692]">clean code</b> and <b class="text-[#b429ff]">system efficiency</b>.
+      </p>
+    </div>
+
+    <div class="Skills">
+      <div class="Skills-track">
+        <div class="card"><img src="/images/html.png" alt=""></div>
+        <div class="card"><img src="/images/css.png" alt=""></div>
+        <div class="card"><img src="/images/javascript.png" alt=""></div>
+        <div class="card"><img src="/images/tailwind.png" alt=""></div>
+        <div class="card"><img src="/images/react-js.png" alt=""></div>
+        <div class="card"><img src="/images/redux.png" alt=""></div>
+        <div class="card"><img src="/images/java.png" alt=""></div>
+        <div class="card"><img src="/images/spring-boot.png" alt=""></div>
+        <div class="card"><img src="/images/mongodb.png" alt=""></div>
+        <div class="card"><img src="/images/mysql.png" alt=""></div>
+        <div class="card"><img src="/images/JWT.png" alt=""></div>
+        <div class="card"><img src="/images/rest api.png" alt=""></div>
+        <div class="card"><img src="/images/postman.png" alt=""></div>
+        <div class="card"><img src="/images/Maven.png" alt=""></div>
+        <div class="card"><img src="/images/git.png" alt=""></div>
+        <div class="card"><img src="/images/git-hub.png" alt=""></div>
+        <div class="card"><img src="/images/microservices.png" alt=""></div>
+        <div class="card"><img src="/images/vs-code.png" alt=""></div>
+        <div class="card"><img src="/images/intellij.png" alt=""></div>
+        <div class="card"><img src="/images/Windows.png" alt=""></div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="card"><img src="/images/html.png" alt=""></div>
+        <div class="card"><img src="/images/css.png" alt=""></div>
+        <div class="card"><img src="/images/javascript.png" alt=""></div>
+        <div class="card"><img src="/images/tailwind.png" alt=""></div>
+        <div class="card"><img src="/images/react-js.png" alt=""></div>
+        <div class="card"><img src="/images/redux.png" alt=""></div>
+        <div class="card"><img src="/images/java.png" alt=""></div>
+        <div class="card"><img src="/images/spring-boot.png" alt=""></div>
+        <div class="card"><img src="/images/mongodb.png" alt=""></div>
+        <div class="card"><img src="/images/mysql.png" alt=""></div>
+        <div class="card"><img src="/images/JWT.png" alt=""></div>
+        <div class="card"><img src="/images/rest api.png" alt=""></div>
+        <div class="card"><img src="/images/postman.png" alt=""></div>
+        <div class="card"><img src="/images/Maven.png" alt=""></div>
+        <div class="card"><img src="/images/git.png" alt=""></div>
+        <div class="card"><img src="/images/git-hub.png" alt=""></div>
+        <div class="card"><img src="/images/microservices.png" alt=""></div>
+        <div class="card"><img src="/images/vs-code.png" alt=""></div>
+        <div class="card"><img src="/images/intellij.png" alt=""></div>
+        <div class="card"><img src="/images/Windows.png" alt=""></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div
+        class="socials text-[#fefae0] flex justify-center items-center mt-3 flex-col"
+       >
+        <h1 class="text-[30px] text-[#48ff00] font-semibold">Follow Me</h1>
+        <div class="social mt-3 mb-5">
+          <div
+            class="flex justify-center items-center text-[50px] border border-white/15 rounded-xl py-1 px-3 space-x-3"
+          >
+            <a href="#">
+              <i
+                class="fa-brands fa-linkedin hover:-translate-y-2 text-[#fefae0] rounded"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-square-github hover:-translate-y-2 text-[#fefae0] rounded"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-square-dribbble hover:-translate-y-2 text-[#fefae0] rounded"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-square-behance hover:-translate-y-2 text-[#fefae0] rounded"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+  <div class="flex-grow border border-[#ffffff21] w-[96%] mx-auto mt-5"></div>
+
+  <div class="flex justify-end w-[96%] mx-auto">
+    <button
+      class="text-[#fefae0] text-[30px] border border-blue-500 py-5 px-8 rounded-full mt-8 transition-all duration-500 ease-in-out hover:bg-blue-500 hover:text-white group">
+      <a href="projects.html" class="flex items-center gap-2">
+        Projects
+        <span class="transition-transform duration-500 group-hover:translate-x-2">&rarr;</span>
+      </a>
+    </button>
+  </div>
+
+  <!-- CONTACT -->
+
+  <div
+    class="contact-box border border-white/20 mt-10 h-[530px] w-[98%] mx-auto rounded-2xl text-[#fefae0] relative overflow-hidden">
+    <div>
+      <div class="contact-socials flex m-2 md:m-7 justify-between">
+        <div>
+          <p class="font-semibold text-[16px] md:text-[35px]">
+            <span class="text-[#ff6f31]">eat🍴</span>,
+            <span class="text-[#fe32fe]">code🧑‍💻</span>,
+            <span class="text-[#34b8ff]">sleep😴</span>
+          </p>
+          <p class="text-[20px] text-[#f8ff2f] md:text-[25px]">
+            & repeat🔁
+          </p>
+        </div>
+        <ul>
+          <p class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold">
+            Explore
+          </p>
+          <li class="text-[20px] hover:text-[#00bbf9] autoShow">
+            <a href="index.html">Home</a>
           </li>
-          <li class="relative flex items-center gap-2">
-            <i
-              class="fa-solid text-2xl text-[#fff] fa-address-card order-2 md:order-none"
-            ></i
-            ><a
-              href="about.html"
-              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
-              >About</a
-            >
+          <li class="text-[20px] hover:text-[#00bbf9] autoShow">
+            <a href="about.html">About Me</a>
           </li>
-          <li class="relative flex items-center gap-2">
-            <i
-              class="fa-solid text-xl text-[#fff] fa-suitcase order-2 md:order-none"
-            ></i
-            ><a
-              href="projects.html"
-              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
-              >Projects</a
-            >
+          <li class="text-[20px] hover:text-[#00bbf9] autoShow">
+            <a href="projects.html">My Projects</a>
           </li>
-          <li class="relative flex items-center gap-2">
-            <i
-              class="fa-solid text-2xl text-[#fff] fa-user order-2 md:orFder-none"
-            ></i
-            ><a
-              href="contact.html"
-              class="menu-text absolute right-1 hidden text-[#fff] text-lg font-bold"
-              >Contact</a
-            >
+          <li class="text-[20px] hover:text-[#00bbf9] autoShow">
+            <a href="contact.html">Contact Me</a>
+          </li>
+        </ul>
+        <ul>
+          <p class="mb-3 text-[#1789fc] text-[20px] md:text-[30px] font-semibold flex flex-col">
+            Follow Me
+          </p>
+          <li class="hover:text-[#00bbf9] autoShow">
+            <a href="#" class="text-[15px] md:text-[20px]"><img src="/images/icons8-linkedin-25.png" alt="#"
+                class="inline-block" />
+              LinkedIn</a>
+          </li>
+          <li class="mt-2 hover:text-[#00bbf9] autoShow">
+            <a href="#" class="text-[15px] md:text-[20px]"><img src="/images/icons8-dribble-25.png" alt="#"
+                class="inline-block" />
+              Dribble</a>
+          </li>
+          <li class="mt-2 hover:text-[#00bbf9] autoShow">
+            <a href="#" class="text-[15px] md:text-[20px]"><img src="/images/icons8-behance-25.png" alt="#"
+                class="inline-block" />
+              Behance</a>
+          </li>
+          <li class="mt-2 hover:text-[#00bbf9] autoShow">
+            <a href="#" class="text-[15px] md:text-[20px]"><img src="/images/icons8-github-20.png" alt="#"
+                class="inline-block ml-1" />
+              Git Hub</a>
           </li>
         </ul>
       </div>
-    </div>
-
-    <!-- ABOUT ME -->
-
-    <div class="about-container">
-      <div
-        class="flex mt-5 md:mt-10 text-[#fefae0] w-[95%] text-[60px] md:text-[120px] mx-auto move-left-to-right"
-      >
-        About Me
-      </div>
-      <div class="flex-grow border border-[#ffffff21] w-[96%] mx-auto"></div>
-
-      <div class="text-[#fefae0] justify-center w-[95%] mx-auto">
+      <div>
         <p
-          class="text-[25px] md:text-[60px] font-semibold border-b mt-5 border-white pb-4"
-        >
-          Hi there! 👋 I'm Shivakumar 😎, <br />I specialize in crafting
-          seamless,
-          <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-[#43ffcd] via-[#4378f4] to-[#00f9fe]"
-            >end-to-end</span
-          >
-          solutions that deliver real impact.
+          class="dsk text-[100px] right-4 bottom-10 md:text-[400px] absolute md:top-32 z-[-1] md:left-9 md:right-28 font-bold font-['Ephesis']">
+          &lt;DS<span class="text-[#ff7b00]">K</span><span class="text-[#fff201]">/</span>&gt;
         </p>
-      </div>
-      <div
-        class="more-info flex flex-col md:mt-16 text-[#fefae0] md:flex w-[90%] mx-auto md:justify-between md:m-6 md:flex-row md:mx-auto"
-      >
-        <p class="text-[15px] md:text-[25px] md:w-[50%] mt-2">
-          I specialize in building
-          <b class="text-[#31ffd6]">scalable</b>,
-          <b class="text-[#ff2692]">high-performance</b>
-          applications with a strong focus on
-          <b class="text-[#ffed2a]">user experience</b>
-          and efficient development practices. Over the past
-          <b class="text-[#ff2a2a]">1.5 years</b>, I dedicated
-          <b class="text-[#b429ff]"> 5 - 6 </b>
-          hours daily to learning new technologies and developing
-
-          <b class="text-[#296dff]">innovative projects. </b>
-        </p>
-        <div class="side-info mt-4 md:mt-0 md:w-[30%]">
-          <p>
-            || My ability to <b>code and communicate</b> effectively helps in
-            creating more <b>efficient</b>, user-friendly websites. ||
-          </p>
-          <div class="languages mt-6">
-            <h3 class="text-[20px] font-semibold">Languages known :</h3>
-            <br />
-            <p>English</p>
-            <p>తెలుగు</p>
-            <p>हिन्दी</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-[95%] mx-auto">
-        <div>
-          <p
-            class="text-[#d900fa] flex justify-center items-center text-3xl font-bold my-10"
-          >
-            What I Know <span class="animate-ping"> .</span>
-          </p>
-        </div>
-
-        <section
-          class="about-stack flex flex-col md:flex-row gap-10 w-[90%] mx-auto py-12 items-end"
-        >
-          <article
-            class="flex-1 w-full border-4 border-[#0681fc] p-6 hover:bg-[#0681fc] transition-colors duration-300"
-          >
-            <div class="relative aspect-video mb-8 overflow-hidden group">
-              <img
-                src="images/Front-end.png"
-                alt="Front-end development"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
-              ></div>
-            </div>
-
-            <div class="group transition-colors duration-300 p-3 rounded-xl">
-              <span
-                class="block text-[#d7d7d779] mb-3 text-4xl font-bold font-mono transition-colors duration-300 group-hover:text-black"
-              >
-                01.
-              </span>
-
-              <hr
-                class="border-[#ffffff21] transition-colors duration-300 group-hover:border-black/20"
-              />
-
-              <h3
-                class="text-[#fefae0] text-3xl mt-6 mb-4 font-semibold tracking-tight transition-colors duration-300 group-hover:text-black"
-              >
-                Front-End
-              </h3>
-
-              <p
-                class="text-[#fefae0]/80 leading-relaxed transition-colors duration-300 group-hover:text-black"
-              >
-                I design fast, modern, user-focused digital experiences from
-                complex ideas.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="flex-1 w-full border-4 border-[#01ff38] p-6 hover:bg-[#01ff38] transition-colors duration-300"
-          >
-            <div class="relative aspect-video mb-8 overflow-hidden group">
-              <img
-                src="images/Back-End.png"
-                alt="Back-end development"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
-              ></div>
-            </div>
-
-            <div class="group transition-colors duration-300 p-3 rounded-xl">
-              <span
-                class="block text-[#d7d7d779] mb-3 text-4xl font-bold font-mono transition-colors duration-300 group-hover:text-black"
-              >
-                02.
-              </span>
-
-              <hr
-                class="border-[#ffffff21] transition-colors duration-300 group-hover:border-black/20"
-              />
-
-              <h3
-                class="text-[#fefae0] text-3xl mt-6 mb-4 font-semibold tracking-tight transition-colors duration-300 group-hover:text-black"
-              >
-                Back-End
-              </h3>
-
-              <p
-                class="text-[#fefae0]/80 leading-relaxed transition-colors duration-300 group-hover:text-black"
-              >
-                Designing scalable backend systems with APIs, efficient
-                databases, and reliability.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="flex-1 w-full border-4 border-[#fc0664] p-6 hover:bg-[#fc0664] transition-colors duration-300"
-          >
-            <div class="relative aspect-video mb-8 overflow-hidden group">
-              <img
-                src="images/Full-Stack.png"
-                alt="Full-stack development"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
-              ></div>
-            </div>
-
-            <div class="group transition-colors duration-300 p-3 rounded-xl">
-              <span
-                class="block text-[#d7d7d779] mb-3 text-4xl font-bold font-mono transition-colors duration-300 group-hover:text-black"
-              >
-                03.
-              </span>
-
-              <hr
-                class="border-[#ffffff21] transition-colors duration-300 group-hover:border-black/20"
-              />
-
-              <h3
-                class="text-[#fefae0] text-3xl mt-6 mb-4 font-semibold tracking-tight transition-colors duration-300 group-hover:text-black"
-              >
-                Full-Stack
-              </h3>
-
-              <p
-                class="text-[#fefae0]/80 leading-relaxed transition-colors duration-300 group-hover:text-black"
-              >
-                Design scalable, secure solutions, intuitive interfaces.
-              </p>
-            </div>
-          </article>
-        </section>
-        <!-- Infinite Scroll -->
-
-        <div>
-          <p
-            class="text-[#e9fa00] flex justify-center items-center text-4xl font-bold my-10"
-          >
-            Technologies I Work With <span class="animate-ping"> .</span>
-          </p>
-          <p class="text-[#fefae0] text-3xl text-center mb-10">
-            Skilled in developing
-            <b class="text-[#31ffd6]">scalable</b> front-end solutions supported
-            by <b class="text-[#ff6f31]">reliable</b> and maintainable back-end
-            <b class="text-[#34b8ff]">architectures</b>, with a strong emphasis
-            on <b class="text-[#ff2692]">clean code</b> and
-            <b class="text-[#b429ff]">system efficiency</b>.
-          </p>
-        </div>
-
-        <div class="Skills bg-[#202020] shadow-lg">
-          <div class="Skills-track">
-            <div class="card"><img src="/images/html.png" alt="" /></div>
-            <div class="card"><img src="/images/css.png" alt="" /></div>
-            <div class="card"><img src="/images/javascript.png" alt="" /></div>
-            <div class="card"><img src="/images/tailwind.png" alt="" /></div>
-            <div class="card"><img src="/images/react-js.png" alt="" /></div>
-            <div class="card"><img src="/images/redux.png" alt="" /></div>
-            <div class="card"><img src="/images/java.png" alt="" /></div>
-            <div class="card"><img src="/images/spring-boot.png" alt="" /></div>
-            <div class="card"><img src="/images/mongodb.png" alt="" /></div>
-            <div class="card"><img src="/images/mysql.png" alt="" /></div>
-            <div class="card"><img src="/images/JWT.png" alt="" /></div>
-            <div class="card"><img src="/images/rest api.png" alt="" /></div>
-            <div class="card"><img src="/images/postman.png" alt="" /></div>
-            <div class="card"><img src="/images/Maven.png" alt="" /></div>
-            <div class="card"><img src="/images/git.png" alt="" /></div>
-            <div class="card"><img src="/images/git-hub.png" alt="" /></div>
-            <div class="card">
-              <img src="/images/microservices.png" alt="" />
-            </div>
-            <div class="card"><img src="/images/vs-code.png" alt="" /></div>
-            <div class="card"><img src="/images/intellij.png" alt="" /></div>
-            <div class="card"><img src="/images/Windows.png" alt="" /></div>
-            <!-- Duplicate for infinite scroll -->
-            <div class="card"><img src="/images/html.png" alt="" /></div>
-            <div class="card"><img src="/images/css.png" alt="" /></div>
-            <div class="card"><img src="/images/javascript.png" alt="" /></div>
-            <div class="card"><img src="/images/tailwind.png" alt="" /></div>
-            <div class="card"><img src="/images/react-js.png" alt="" /></div>
-            <div class="card"><img src="/images/redux.png" alt="" /></div>
-            <div class="card"><img src="/images/java.png" alt="" /></div>
-            <div class="card"><img src="/images/spring-boot.png" alt="" /></div>
-            <div class="card"><img src="/images/mongodb.png" alt="" /></div>
-            <div class="card"><img src="/images/mysql.png" alt="" /></div>
-            <div class="card"><img src="/images/JWT.png" alt="" /></div>
-            <div class="card"><img src="/images/rest api.png" alt="" /></div>
-            <div class="card"><img src="/images/postman.png" alt="" /></div>
-            <div class="card"><img src="/images/Maven.png" alt="" /></div>
-            <div class="card"><img src="/images/git.png" alt="" /></div>
-            <div class="card"><img src="/images/git-hub.png" alt="" /></div>
-            <div class="card">
-              <img src="/images/microservices.png" alt="" />
-            </div>
-            <div class="card"><img src="/images/vs-code.png" alt="" /></div>
-            <div class="card"><img src="/images/intellij.png" alt="" /></div>
-            <div class="card"><img src="/images/Windows.png" alt="" /></div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="flex-grow border border-[#ffffff21] w-[96%] mx-auto mt-5"
-      ></div>
-
-      <div class="flex justify-end w-[96%] mx-auto">
-        <button
-          class="text-[#fefae0] text-[30px] border border-blue-500 py-5 px-8 rounded-full mt-8 transition-all duration-500 ease-in-out hover:bg-blue-500 hover:text-white group"
-        >
-          <a href="projects.html" class="flex items-center gap-2">
-            Projects
-            <span
-              class="transition-transform duration-500 group-hover:translate-x-2"
-              >&rarr;</span
-            >
-          </a>
-        </button>
-      </div>
-
-      <!-- CONTACT -->
-
-      <div
-        class="contact-box border border-white/20 mt-10 h-[530px] w-[98%] mx-auto rounded-2xl text-[#fefae0] relative overflow-hidden"
-      >
-        <div>
-          <div class="contact-socials flex m-2 md:m-7 justify-between">
-            <div>
-              <p class="font-semibold text-[16px] md:text-[35px]">
-                <span class="text-[#ff6f31]">eat🍴</span>,
-                <span class="text-[#fe32fe]">code🧑‍💻</span>,
-                <span class="text-[#34b8ff]">sleep😴</span>
-              </p>
-              <p class="text-[20px] text-[#f8ff2f] md:text-[25px]">
-                & repeat🔁
-              </p>
-            </div>
-            <ul>
-              <p
-                class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold"
-              >
-                Explore
-              </p>
-              <li class="text-[20px] hover:text-[#00bbf9] autoShow">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="text-[20px] hover:text-[#00bbf9] autoShow">
-                <a href="about.html">About Me</a>
-              </li>
-              <li class="text-[20px] hover:text-[#00bbf9] autoShow">
-                <a href="projects.html">My Projects</a>
-              </li>
-              <li class="text-[20px] hover:text-[#00bbf9] autoShow">
-                <a href="contact.html">Contact Me</a>
-              </li>
-            </ul>
-            <ul>
-              <p
-                class="mb-3 text-[#1789fc] text-[20px] md:text-[30px] font-semibold flex flex-col"
-              >
-                Follow Me
-              </p>
-              <li class="hover:text-[#00bbf9] autoShow">
-                <a href="#" class="text-[15px] md:text-[20px]"
-                  ><img
-                    src="/images/icons8-linkedin-25.png"
-                    alt="#"
-                    class="inline-block"
-                  />
-                  LinkedIn</a
-                >
-              </li>
-              <li class="mt-2 hover:text-[#00bbf9] autoShow">
-                <a href="#" class="text-[15px] md:text-[20px]"
-                  ><img
-                    src="/images/icons8-dribble-25.png"
-                    alt="#"
-                    class="inline-block"
-                  />
-                  Dribble</a
-                >
-              </li>
-              <li class="mt-2 hover:text-[#00bbf9] autoShow">
-                <a href="#" class="text-[15px] md:text-[20px]"
-                  ><img
-                    src="/images/icons8-behance-25.png"
-                    alt="#"
-                    class="inline-block"
-                  />
-                  Behance</a
-                >
-              </li>
-              <li class="mt-2 hover:text-[#00bbf9] autoShow">
-                <a href="#" class="text-[15px] md:text-[20px]"
-                  ><img
-                    src="/images/icons8-github-20.png"
-                    alt="#"
-                    class="inline-block ml-1"
-                  />
-                  Git Hub</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p
-              class="dsk text-[100px] right-4 bottom-10 md:text-[400px] absolute md:top-32 z-[-1] md:left-9 md:right-28 font-bold font-['Ephesis']"
-            >
-              &lt;DS<span class="text-[#ff7b00]">K</span
-              ><span class="text-[#fff201]">/</span>&gt;
-            </p>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="w-[90%] mx-auto m-4 text-[#fefae0] flex flex-col">
-      <div class="flex justify-center">
-        <p class="flex text-[16px] md:text-[20px] font-semibold">
-          Made With 💞 by Shivakumar Dornala
-        </p>
-      </div>
-      <div class="flex justify-between mt-3 text-[12px] md:text-[20px]">
-        <p>DSK ©2025 - All rights reserved</p>
-        <p>Hyderabad, India</p>
-      </div>
+  </div>
+  </div>
+  <div class="w-[90%] mx-auto m-4 text-[#fefae0] flex flex-col">
+    <div class="flex justify-center">
+      <p class="flex text-[16px] md:text-[20px] font-semibold">
+        Made With 💞 by Shivakumar Dornala
+      </p>
     </div>
+    <div class="flex justify-between mt-3 text-[12px] md:text-[20px]">
+      <p>DSK ©2025 - All rights reserved</p>
+      <p>Hyderabad, India</p>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

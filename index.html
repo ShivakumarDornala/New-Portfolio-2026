@@ -101,19 +101,19 @@
         }
 
         .fadeIn{
-            animation: fadeInScale linear;
+            animation: fadeInScale 2s linear;
             animation-timeline: view();
-            animation-range: entry 0% cover 50%;
+            animation-range: entry 0% cover 60%;
         }
 
         @keyframes fadeInScale {
             0% {
                 opacity: 0;
-                scale : 0.5;
+                transform: translate(-100px);
             }
             100% {
                 opacity: 1;
-                scale: 1;
+                transform: translate(0);
             }
         }
     </style>
@@ -264,14 +264,14 @@
 
         <div>
             <p
-                class="text-xl md:text-3xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa] to-[#0244fa] mt-10 m-7 font-['Lugrasimo']">
+                class="fadeIn text-xl md:text-3xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa] to-[#0244fa] mt-10 m-7 font-['Lugrasimo']">
                 [Crafting code that seamlessly
                 <br /> integrates design and functionality.]
             </p>
 
 
             <div class="flex-grow border border-[#ffffff21] w-[96%] mx-auto mt-5"></div>
-            <div class="w-[96%] mx-auto mt-5">
+            <div class="fadeIn w-[96%] mx-auto mt-5">
                 <p class="w-[90%] md:w-[50%] text-[22px] md:text-[30px]">I craft visually engaging front-end designs and
                     integrate them with powerful back-end functionality to build
                     modern, high-performing websites.
@@ -301,13 +301,15 @@
                     </p>
                     <p class="text-[20px] text-[#f8ff2f] md:text-[25px]">& repeat🔁</p>
                 </div>
-                <ul class="">
+                <div class="fadeIn">
+                <ul>
                     <p class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold">Explore</p>
                     <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="index.html">Home</a></li>
                     <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="about.html">About Me</a></li>
                     <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="projects.html">My Projects</a></li>
                     <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="contact.html">Contact Me</a></li>
                 </ul>
+                </div>
                 <ul>
                     <p class="mb-3 text-[#1789fc] text-[20px] md:text-[30px] font-semibold flex flex-col">Follow Me</p>
                     <li class="hover:text-[#00bbf9] autoShow"><a href="#" class="text-[15px] md:text-[20px]"><img

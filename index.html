@@ -99,6 +99,23 @@
             background: -webkit-linear-gradient(to right, #1c1c1c, #000000);
             background: linear-gradient(to left, #141414, #000000);
         }
+
+        .fadeIn{
+            animation: fadeInScale linear;
+            animation-timeline: view();
+            animation-range: entry 0% to 60%;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                scale : 0.5;
+            }
+            100% {
+                opacity: 1;
+                scale: 1;
+            }
+        }
     </style>
 
 </head>

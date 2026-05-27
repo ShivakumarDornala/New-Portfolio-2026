@@ -52,25 +52,18 @@
             background: #80ffdb;
             border-radius: 15px;
         }
-        
+
         body {
             background: black;
         }
-
-      
-
-    
     </style>
 
 </head>
 
 
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden relative">
-    <!-- Radial Gradient Background -->
-    <div class="absolute top-0 left-0 w-full h-screen pointer-events-none -z-10 bg-black">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full blur-3xl" style="background: radial-gradient(circle at 50% 40%, #170e9d 0%, #000000 70%);"></div>
-    </div>
-    
+
+
     <!-- Navbar -->
     <div class="Home-container min-h-screen relative">
         <div class="navigation">
@@ -119,29 +112,54 @@
             </nav>
         </div>
 
-        <!-- Content -->
-    <div class="text-white min-h-[91vh] flex flex-col justify-start pt-40 px-6 space-y-4 font-sans text-center move-top-to-bottom border-b border-white/15">
-        <div class="content relative">
-            <p class="font-extrabold text-8xl">
-                Full-Stack Developer
-            </p>
-            <p class="font-extrabold text-8xl">
-               & AI Enthusiast
-            </p>
-            <p><img src="images/King.png" class="absolute w-2xs h-2xs" alt=""></p>
-        </div>
-    </div>
+        <!-- Home -->
 
-    <!-- Home -->
-<!-- 
         <div class="md:flex md:justify-center md:w-full border-b border-white/15">
-        
-            <div
-                class="text-white min-h-[91vh] flex flex-col  justify-center px-6 py-12 space-y-4 font-sans text-center move-top-to-bottom">
 
+            <div
+                class="    text-white min-h-[91vh] flex flex-col items-center justify-center px-6 py-12 space-y-4 font-sans text-center move-top-to-bottom">
+
+
+                <div class="flex space-x-3 justify-center items-center md:mb-4 group">
+                    <img src="/images/king.png"
+                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#00bbf9] rounded-full cursor-pointer hover:w-96 hover:h-96"
+                        alt="">
+                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[20px]">Hello, I'm Shiva</p>
+                </div>
+
+                <div class="text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
+                    CRAFTING
+                </div>
+
+
+                <h1 class="text-[#ffc524]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
+
+
+                <h1 class="text-[#04ffc9] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
+
+
+                <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
+
+                    <span
+                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa]  to-[#0244fa]">
+                        FULL-STACK SOFTWARE ENGINEER
+                    </span>
+                </div>
+
+                <p class="text-[#fefae0] text-base md:text-2xl max-w-3xl mt-6">
+                    I develop digital interfaces that integrate
+                    <span class="text-purple-500 font-semibold">streamlined</span> performance
+                    artistic appeal,
+                    <span class="text-yellow-400 font-semibold">robust</span>, and
+                    <span class="text-cyan-400 font-semibold">functionality</span>.
+                </p>
+
+                <div class="text-[20px] text-[#fefae0] text-right">
+                    📍 Hyderabad, India
+                </div>
             </div>
 
-        </div> -->
+        </div>
     </div>
     </div>
 
@@ -207,13 +225,14 @@
                     <p class="text-[20px] text-[#f8ff2f] md:text-[25px]">& repeat🔁</p>
                 </div>
                 <div class="fadeIn">
-                <ul>
-                    <p class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold">Explore</p>
-                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="index.html">Home</a></li>
-                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="about.html">About Me</a></li>
-                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="projects.html">My Projects</a></li>
-                    <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="contact.html">Contact Me</a></li>
-                </ul>
+                    <ul>
+                        <p class="mb-3 text-[#fc2dff] text-[20px] md:text-[30px] font-semibold">Explore</p>
+                        <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="index.html">Home</a></li>
+                        <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="about.html">About Me</a></li>
+                        <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="projects.html">My Projects</a>
+                        </li>
+                        <li class="text-[20px] hover:text-[#00bbf9] autoShow"><a href="contact.html">Contact Me</a></li>
+                    </ul>
                 </div>
                 <ul>
                     <p class="mb-3 text-[#1789fc] text-[20px] md:text-[30px] font-semibold flex flex-col">Follow Me</p>
@@ -249,47 +268,3 @@
 </body>
 
 </html>
-
-
-
-
-
-<!-- 
-                  <div class="flex space-x-3 justify-center items-center md:mb-4 group">
-                     <img src="/images/king.png"
-                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#00bbf9] rounded-full cursor-pointer hover:w-96 hover:h-96"
-                        alt=""> 
-                    
-                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[20px]">Hello, I'm Shiva</p>
-                </div> 
-
-                <div class="text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
-                    CRAFTING
-                </div>
-
-
-                <h1 class="text-[#ffc524]  text-4xl md:text-6xl font-bold">DIGITAL</h1>
-
-
-                <h1 class="text-[#04ffc9] text-4xl md:text-6xl font-bold">EXPERIENCES</h1>
-
-
-                <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
-
-                    <span
-                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa]  to-[#0244fa]">
-                        FULL-STACK SOFTWARE ENGINEER
-                    </span>
-                </div>
-
-                <p class="text-[#fefae0] text-base md:text-2xl max-w-3xl mt-6">
-                    I develop digital interfaces that integrate
-                    <span class="text-purple-500 font-semibold">streamlined</span> performance
-                    artistic appeal,
-                    <span class="text-yellow-400 font-semibold">robust</span>, and
-                    <span class="text-cyan-400 font-semibold">functionality</span>.
-                </p>
-
-                <div class="text-[20px] text-[#fefae0] text-right">
-                    📍 Hyderabad, India
-                </div> -->

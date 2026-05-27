@@ -104,44 +104,43 @@
 
 
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden">
-  <div class="navigation border-b border-white/15">
-    <nav class="flex justify-between w-[95%] mx-auto m-1.5 text-base font-medium md:flex">
-      <a class="logo inline-block text-[20px] font-bold border border-[#ffffff21] rounded-full py-3 px-3 text-[#fefae0] font-['Quantico']"
-        href="index.html">&lt;DSK/&gt;</a>
+  <div class="navigation">
+    <nav class="flex justify-between w-[90%] mx-auto m-3 text-base font-medium md:flex">
+      <a class="logo inline-block text-[18px] font-extrabold border border-[#ffffff21] rounded-full py-3 px-2 text-[#fefae0] font-['Quantico']"
+        href="index.html">&lt;DSK<span class="text-blue-500">/</span>&gt;</a>
       <div
         class="dropdown-menu duration-1000 z-50 w-[95%] mx-auto text-white absolute -top-full md:static md:flex-row md:justify-center md:w-auto">
         <ul
-          class="flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#fefae0] bg-black md:bg-[#0b0b0b]">
+          class="main flex justify-between mx-auto flex-col md:flex md:border md:font-medium md:border-[#ffffff19] md:rounded-full md:flex-row md:justify-center text-[#d2d5d7] bg-black md:bg-[#0b0b0b]">
           <a href="index.html">
             <li
-              class="flex justify-between mt-3 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-              <i class="fa-solid fa-house text-base mr-2 order-2 md:order-none"></i>Home
+              class="flex items-center mt-3 hover:text-[#fff] border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:py-3 md:px-3 text-[14px]">
+              <i class="fa-solid fa-house text-[14px] mr-2"></i>Home
             </li>
           </a>
           <a href="about.html">
             <li
-              class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-              <i class="fa-solid fa-address-card mr-2 text-base order-2 md:order-none"></i>About Me
+              class="flex items-center mt-2 hover:text-[#fff] border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:py-3 md:px-3 text-[14px]">
+              <i class="fa-solid fa-address-card mr-2 text-[14px]"></i>About Me
             </li>
           </a>
           <a href="#">
             <li
-              class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:order-none md:py-3 md:px-3">
-              <i class="fa-solid fa-suitcase mr-2 text-base order-2 md:order-none"></i>My Projects
+              class="flex items-center mt-2 hover:text-[#fff] border border-[#ffffff19] rounded-md py-3 px-2 md:border-none md:mt-0 md:py-3 md:px-3 text-[14px]">
+              <i class="fa-solid fa-suitcase mr-2 text-[14px]"></i>My Projects
             </li>
           </a>
           <a class="md:hidden" href="contact.html">
-            <li class="flex justify-between mt-2 hover:text-[#00bbf9] order-1 border border-[#ffffff19] rounded-md p-2">
-              <i class="fa-solid fa-user mr-2 text-base order-2"></i>Contact
-              Me
+            <li class="flex items-center mt-2 hover:text-[#fff] border border-[#ffffff19] rounded-md p-2 text-[14px]">
+              <i class="fa-solid fa-user mr-2 text-[14px]"></i>Contact Me
             </li>
           </a>
         </ul>
       </div>
       <div
-        class="contact -top-[100px] hover:text-[#00bbf9] text-[#fefae0] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
+        class="contact -top-[100px] hover:text-[#fff] text-[#d2d5d7] bg-[#050958] text-[14px] md:font-medium md:border border-[#ffffff19] rounded-full md:py-3 md:px-3 md:top-0 relative">
         <a href="contact.html">
-          <i class="fa-solid fa-user mr-2 text-base"></i>Contact Me</a>
+          <i class="fa-solid fa-user mr-2 text-[14px]"></i>Contact Me</a>
       </div>
       <div class="humburger md:hidden">
         <ion-icon onclick="onToggleMenu(this)" name="menu"

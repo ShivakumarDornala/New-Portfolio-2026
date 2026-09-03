@@ -139,6 +139,32 @@
       height: 80px;
       object-fit: contain;
     }
+
+    @media (max-width: 767px) {
+      .Skills .card {
+        width: calc((100% - 1rem) / 3);
+        max-width: none;
+        min-width: 0;
+        height: 80px;
+        gap: 4px;
+        overflow: hidden;
+      }
+
+      .Skills .card img {
+        width: 28px !important;
+        height: 28px !important;
+        max-width: 28px;
+        max-height: 28px;
+        flex-shrink: 1;
+        object-fit: contain;
+      }
+
+      .Skills .card p {
+        min-width: 0;
+        overflow-wrap: anywhere;
+        font-size: 0.75rem;
+      }
+    }
   </style>
 </head>
 
@@ -300,7 +326,7 @@
 
     <div>
       <div class="Skills w-[95%] mx-auto border border-gray-700 p-3 rounded-none">
-        <div class="flex flex-wrap gap-1 justify-center">
+        <div class="flex flex-wrap justify-center gap-1 md:justify-center">
 
           <div
             class="card flex h-[100px] w-[250px] items-center justify-center border p-1 border-gray-800 rounded-none gap-3 hover:bg-orange-400 hover:cursor-pointer ">

@@ -56,6 +56,77 @@
         body {
             background: black;
         }
+
+        .grid-bg {
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+
+        /* ---- the reveal animation ---- */
+        @keyframes blurReveal {
+            0% {
+                opacity: 0;
+                filter: blur(14px);
+                transform: translateY(-18px);
+            }
+
+            60% {
+                opacity: 1;
+                filter: blur(3px);
+            }
+
+            100% {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            animation: blurReveal 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            will-change: filter, opacity, transform;
+        }
+
+        /* stagger each line, top to bottom, matching the reference pacing */
+        .reveal-1 {
+            animation-delay: 0.10s;
+        }
+
+        .reveal-2 {
+            animation-delay: 0.35s;
+        }
+
+        .reveal-3 {
+            animation-delay: 0.55s;
+        }
+
+        .reveal-4 {
+            animation-delay: 0.75s;
+        }
+
+        .reveal-5 {
+            animation-delay: 0.95s;
+        }
+
+        .reveal-6 {
+            animation-delay: 1.15s;
+        }
+
+        .reveal-7 {
+            animation-delay: 1.35s;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                animation: none;
+                opacity: 1;
+                filter: none;
+                transform: none;
+            }
+        }
     </style>
 
 </head>
@@ -113,43 +184,40 @@
 
         <!-- Home -->
 
-        <div class="md:flex md:justify-center md:w-full border-b border-white/15">
+        <div class="md:flex md:justify-center md:w-full border-b border-white/15 grid-bg">
 
             <div
-                class="    text-white min-h-[91vh] flex flex-col items-center justify-center px-6 py-12 space-y-4 font-sans text-center move-top-to-bottom">
+                class="text-white min-h-[91vh] flex flex-col items-center justify-center px-6 py-12 space-y-4 font-sans text-center">
 
-
-                <div class="flex space-x-3 justify-center items-center md:mb-4 group">
+                <div class="reveal reveal-1 flex space-x-3 justify-center items-center md:mb-4 group">
                     <img src="/images/king.png"
-                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#00bbf9] rounded-full cursor-pointer hover:w-96 hover:h-96"
+                        class="w-20 h-20 p-2 object-cover hover:border-2 border-[#00bbf9] rounded-full cursor-pointer hover:w-96 hover:h-96 transition-all duration-300"
                         alt="">
-                    <p class="border  border-white/15 p-3 rounded-full text-[#fefae0] text-[18px]">
+                    <p class="border border-white/15 p-3 rounded-full text-[#fefae0] text-[18px]">
                         Hello, I'm Shiva
                     </p>
                 </div>
 
-                <div class="text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
+                <div
+                    class="reveal reveal-2 text-[#f32b8f] text-4xl md:text-[70px] font-['Schoolbell'] md:mb-2 font-bold relative">
                     CRAFTING
                 </div>
 
-
-                <h1 class="text-[#fff424] text-4xl md:text-6xl font-bold">
+                <h1 class="reveal reveal-3 text-[#fff424] text-4xl md:text-6xl font-bold">
                     DIGITAL</h1>
 
-
-                <h1 class="text-[#04ffc9] text-4xl md:text-6xl font-bold">
+                <h1 class="reveal reveal-4 text-[#04ffc9] text-4xl md:text-6xl font-bold">
                     EXPERIENCES</h1>
 
-
-                <div class="flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
-
+                <div
+                    class="reveal reveal-5 flex flex-wrap justify-center items-center text-4xl md:text-6xl font-bold space-x-4">
                     <span
-                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa]  to-[#0244fa]">
+                        class="text-3xl md:text-6xl shadow font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00eaff] via-[#027afa] to-[#0244fa]">
                         FULL-STACK DEVELOPER
                     </span>
                 </div>
 
-                <p class="text-[#fefae0] text-base md:text-2xl max-w-3xl mt-6">
+                <p class="reveal reveal-6 text-[#fefae0] text-base md:text-2xl max-w-3xl mt-6">
                     I develop digital interfaces that integrate
                     <span class="text-purple-500 font-semibold">streamlined</span> performance
                     artistic appeal,
@@ -157,13 +225,12 @@
                     <span class="text-cyan-400 font-semibold">functionality</span>.
                 </p>
 
-                <div class="hello text-[20px] text-[#fefae0] text-right">
+                <div class="reveal reveal-7 hello text-[20px] text-[#fefae0] text-right">
                     <div>
-                        <p>
-                            📍Hyderabad, India
-                        </p>
+                        <p>📍Hyderabad, India</p>
                     </div>
                 </div>
+
             </div>
 
         </div>

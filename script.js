@@ -35,7 +35,7 @@ function startLoader() {
 
         setTimeout(() => {
           counterElement.style.display = "none";
-        }, 6000);
+        }, 650);
       }, 350);
 
       return;

@@ -14,25 +14,39 @@ function onToggleMenu(menuIcon) {
 }
 
 function startLoader() {
-  let counterElement = document.querySelector(".counter");
+  const counterElement = document.querySelector(".counter");
+
+  if (!counterElement) {
+    return;
+  }
+
   let currentValue = 0;
 
   function updateCounter() {
-    if (currentValue === 0) {
+    currentValue += Math.floor(Math.random() * 10) + 5;
+
+    if (currentValue >= 100) {
+      currentValue = 100;
+      counterElement.textContent = `${currentValue}%`;
+
+      setTimeout(() => {
+        counterElement.style.opacity = "0";
+        counterElement.style.transition = "opacity 0.6s ease";
+
+        setTimeout(() => {
+          counterElement.style.display = "none";
+        }, 600);
+      }, 350);
+
       return;
     }
 
-    currentValue += Math.floor(Math.random() * 10) * 1;
+    counterElement.textContent = `${currentValue}%`;
 
-    if (currentValue > 100) {
-      currentValue = 100;
-    }
-
-    counterElement.textContent = currentValue;
-
-    let delay = Math.floor(Math.random() * 200) * 50;
+    const delay = Math.floor(Math.random() * 120) + 60;
     setTimeout(updateCounter, delay);
   }
+
   updateCounter();
 }
 

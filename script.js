@@ -31,11 +31,11 @@ function startLoader() {
 
       setTimeout(() => {
         counterElement.style.opacity = "0";
-        counterElement.style.transition = "opacity 0.6s ease";
+        counterElement.style.transition = "opacity 1s ease";
 
         setTimeout(() => {
           counterElement.style.display = "none";
-        }, 600);
+        }, 6000);
       }, 350);
 
       return;

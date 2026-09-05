@@ -56,14 +56,25 @@
         body {
             background: black;
         }
+
+        .counter {
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: black;
+            padding: 100px;
+            color: aquamarine;
+            z-index: 1000;
+        }
     </style>
 
 </head>
 
 
 <body class="font-['Hanken_Grotesk'] overflow-x-hidden relative">
-
-
+    <div class="counter">0</div>
     <!-- Navbar -->
     <div class="Home-container min-h-screen relative">
         <div class="navigation">
